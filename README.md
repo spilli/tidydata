@@ -61,6 +61,15 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
+# How to scripts works
+1. First it looks for those relevent column names that is either mean or std of measurement variable
+2. Read train and test feature vectors with appropriate columns and row bind them
+3. Read train and test subject identifiers and row bind them
+4. Read train and test activity labels - covert integers to factors with appropriate levels and row bind them
+5. column bind features, subject and activity information to get data1 as needed in the fisrt half
+6. use dplyr group_by() to group data1 into subject and activities
+7. use summarize_each() and compute mean on each of the category
+8. write the data2 table to an output text file 
 
 # License 
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
