@@ -61,7 +61,7 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-# How to scripts works
+# How the scripts works
 1. First it looks for those relevent column names that is either mean or std of measurement variable
 2. Read train and test feature vectors with appropriate columns and row bind them
 3. Read train and test subject identifiers and row bind them
